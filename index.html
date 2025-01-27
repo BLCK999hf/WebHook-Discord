@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário de Anúncio</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <h1>Formulário de Anúncio</h1>
+
+  <form id="announcementForm" action="system.php" method="post">
+    <label for="autor">Autor:</label>
+    <input type="text" id="autor" name="autor" required>
+
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required>
+
+    <label for="rodape">Rodapé:</label>
+    <input type="text" id="rodape" name="rodape" required>
+
+    <label for="cor_categoria">Cor da Categoria:</label>
+    <select id="cor_categoria" name="cor_categoria">
+      <option value="16711680">Vermelho</option>
+      <option value="65280">Verde</option>
+      <option value="255">Azul</option>
+    </select>
+
+    <label for="ativar_campos">Ativar Campos Adicionais:</label>
+    <input type="checkbox" id="ativar_campos" name="ativar_campos">
+
+    <div id="campos_adicionais">
+      <h3>Campos Adicionais:</h3>
+
+      <div class="campo">
+        <label for="campo1">Campo 1:</label>
+        <input type="text" id="campo1" name="campo1">
+      </div>
+
+      <div class="campo">
+        <label for="campo2">Campo 2:</label>
+        <input type="text" id="campo2" name="campo2">
+      </div>
+    </div>
+
+    <input type="submit" value="Enviar Anúncio">
+  </form>
+</body>
+</html>
