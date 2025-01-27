@@ -12,7 +12,7 @@ document.getElementById("announcementForm").addEventListener("submit", function(
         title: titulo,
         description: conteudo,
         color: parseInt(cor)
-      }]
+      }] 
     };
   
     if (negrito) {
